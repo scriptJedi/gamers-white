@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+@@include('html/_head.htm',{
+"title":"Shop - Gaming Produkte"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <div class="content">
+                <div class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="index.html" class="breadcrumbs__link">Startseite</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__current">Shop</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="shop">
+                    <div class="shop__container">
+                        <div class="shop__header">
+                            <h1 class="shop__title">Gaming Shop</h1>
+                            <div class="shop__filters woocommerce-ordering">
+                                <select name="orderby" class="orderby">
+                                    <option value="popularity">Nach Beliebtheit sortiert</option>
+                                    <option value="rating">Nach Bewertung sortiert</option>
+                                    <option value="date">Sortiert nach neuesten</option>
+                                    <option value="price">Nach Preis sortiert: aufsteigend</option>
+                                    <option value="price-desc">Nach Preis sortiert: absteigend</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="shop__content">
+                            <aside class="shop__sidebar sidebar">
+                                <div class="sidebar__widget widget_price_filter">
+                                    <h3 class="sidebar__title">Preis Filter</h3>
+                                    <div class="price_slider_wrapper">
+                                        <div class="price_slider"></div>
+                                        <div class="price_slider_amount">
+                                            <input type="text" id="min_price" name="min_price" value="10" />
+                                            <input type="text" id="max_price" name="max_price" value="1000" />
+                                            <button type="submit" class="button">Filter</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar__widget widget_product_categories">
+                                    <h3 class="sidebar__title">Plattformen</h3>
+                                    <ul class="product-categories">
+                                        <li class="cat-item"><a href="#">PC</a></li>
+                                        <li class="cat-item"><a href="#">PlayStation 5</a></li>
+                                        <li class="cat-item"><a href="#">Xbox Series X</a></li>
+                                        <li class="cat-item"><a href="#">Nintendo Switch</a></li>
+                                    </ul>
+                                </div>
+                            </aside>
+                            <div class="shop__products products">
+                                <div class="products__list">
+                                    <article class="products__item item-product">
+                                        <div class="item-product__inner">
+                                            <div class="item-product__head">
+                                                <h4>Rockstar Games</h4>
+                                                <img src="@img/brands/rc.svg" alt="Rockstar Games">
+                                            </div>
+                                            <div class="item-product__thumb">
+                                                <img src="@img/games/gta.jpg" alt="GTA V">
+                                            </div>
+                                            <div class="item-product__details">
+                                                <a href="shop-single.html" class="item-product__name">Grand Theft Auto
+                                                    V: Premium Edition</a>
+                                                <div class="item-product__price">
+                                                    <del>€59.99</del>
+                                                    <ins>€29.99</ins>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="products__item item-product">
+                                        <div class="item-product__inner">
+                                            <div class="item-product__head">
+                                                <h4>Nintendo</h4>
+                                                <img src="@img/brands/nintendo.svg" alt="Nintendo">
+                                            </div>
+                                            <div class="item-product__thumb">
+                                                <img src="@img/games/zelda.jpg" alt="Zelda">
+                                            </div>
+                                            <div class="item-product__details">
+                                                <a href="shop-single.html" class="item-product__name">The Legend of
+                                                    Zelda: Tears of the Kingdom</a>
+                                                <div class="item-product__price">
+                                                    <ins>€59.99</ins>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="products__item item-product">
+                                        <div class="item-product__inner">
+                                            <div class="item-product__head">
+                                                <h4>Activision</h4>
+                                                <img src="@img/brands/activision.svg" alt="Activision">
+                                            </div>
+                                            <div class="item-product__thumb">
+                                                <img src="@img/games/cod.jpg" alt="Call of Duty">
+                                            </div>
+                                            <div class="item-product__details">
+                                                <a href="shop-single.html" class="item-product__name">Call of Duty:
+                                                    Modern Warfare III</a>
+                                                <div class="item-product__price">
+                                                    <ins>€69.99</ins>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="products__item item-product">
+                                        <div class="item-product__inner">
+                                            <div class="item-product__head">
+                                                <h4>Electronic Arts</h4>
+                                                <img src="@img/brands/ea.svg" alt="Electronic Arts">
+                                            </div>
+                                            <div class="item-product__thumb">
+                                                <img src="@img/games/bf.jpg" alt="Battlefield">
+                                            </div>
+                                            <div class="item-product__details">
+                                                <a href="shop-single.html" class="item-product__name">Battlefield
+                                                    2042</a>
+                                                <div class="item-product__price">
+                                                    <del>€59.99</del>
+                                                    <ins>€19.99</ins>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <nav class="woocommerce-pagination">
+                                    <ul class="page-numbers">
+                                        <li><span class="page-numbers current">1</span></li>
+                                        <li><a href="#" class="page-numbers">2</a></li>
+                                        <li><a href="#" class="page-numbers">3</a></li>
+                                        <li><a href="#" class="next page-numbers">→</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

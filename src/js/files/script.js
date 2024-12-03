@@ -4,8 +4,8 @@ import { isMobile } from "./functions.js";
 import { flsModules } from "./modules.js";
 
 // Функция для генерации инициалов
-function generateInitials() {
-  const initialsElements = document.querySelectorAll(".testimonials__initials");
+function generateInitials(selector) {
+  const initialsElements = document.querySelectorAll(selector);
 
   initialsElements.forEach((element) => {
     const fullName = element.dataset.name;
@@ -20,7 +20,8 @@ function generateInitials() {
 }
 
 function main() {
-  generateInitials();
+  generateInitials(".testimonials__initials");
+  generateInitials(".member__initials");
 }
 
 document.addEventListener("DOMContentLoaded", main);

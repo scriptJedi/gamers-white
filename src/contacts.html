@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+@@include('html/_head.htm',{
+"title":"Kontakt - Gaming Shop"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <div class="content">
+                <div class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="index.html" class="breadcrumbs__link">Startseite</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__current">Kontakt</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <section class="contacts">
+                    <div class="contacts__container">
+                        <div class="contacts__header">
+                            <h1 class="contacts__title">Kontaktiere uns</h1>
+                            <p class="contacts__subtitle">Wir sind für dich da und freuen uns auf deine Nachricht</p>
+                        </div>
+
+                        <div class="contacts__content">
+                            <div class="contacts__info">
+                                <div class="info-block">
+                                    <div class="info-block__icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <h3>E-Mail</h3>
+                                    <p><a href="mailto:info@gaming-shop.de">info@gaming-shop.de</a></p>
+                                </div>
+
+                                <div class="info-block">
+                                    <div class="info-block__icon">
+                                        <i class="fa-solid fa-clock"></i>
+                                    </div>
+                                    <h3>Support-Zeiten</h3>
+                                    <p>Mo-Fr: 9:00 - 18:00<br>Sa: 10:00 - 14:00</p>
+                                </div>
+                            </div>
+
+                            <div class="contacts__form">
+                                <h2>Schreib uns eine Nachricht</h2>
+                                <form class="contact-form">
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" name="name" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email">E-Mail</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="subject">Betreff</label>
+                                        <input type="text" id="subject" name="subject" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="message">Nachricht</label>
+                                        <textarea id="message" name="message" required></textarea>
+                                    </div>
+
+                                    <button type="submit" class="form-submit">Nachricht senden</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="contacts__social">
+                            <h2>Folge uns</h2>
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="Facebook">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Twitter">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="YouTube">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

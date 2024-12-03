@@ -1,3 +1,119 @@
 //====================================================================================================
 
+.footer {
+  padding: toRem(50) 0 toRem(30);
+  background-color: var(--dark-bg);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  // .footer__container
+  &__container {
+    @media (max-width: $mobile) {
+      padding: 0 toRem(15);
+    }
+  }
+
+  // .footer__body
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: toRem(30);
+    margin-bottom: toRem(50);
+
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $mobile) {
+      grid-template-columns: 1fr;
+      gap: toRem(20);
+      margin-bottom: toRem(30);
+    }
+  }
+
+  // .footer__column
+  &__column {
+    @media (max-width: $tablet) {
+      &:first-child {
+        grid-column: span 2;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      &:first-child {
+        grid-column: span 1;
+      }
+    }
+  }
+
+  // .footer__title
+  &__title {
+    color: #fff;
+    font-size: toRem(18);
+    font-weight: 600;
+    margin-bottom: toRem(20);
+    text-transform: uppercase;
+
+    @media (max-width: $mobile) {
+      font-size: toRem(16);
+      margin-bottom: toRem(15);
+    }
+  }
+
+  // .footer__text
+  &__text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: toRem(14);
+    line-height: 1.5;
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: toRem(15);
+      }
+    }
+  }
+
+  // .footer__menu
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(10);
+  }
+
+  // .footer__bottom
+  &__bottom {
+    padding-top: toRem(30);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+
+    @media (max-width: $mobile) {
+      padding-top: toRem(20);
+    }
+  }
+
+  // .footer__copy
+  &__copy {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: toRem(14);
+  }
+}
+
+.menu-footer {
+  // .menu-footer__item
+  &__item {
+  }
+
+  // .menu-footer__link
+  &__link {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: toRem(14);
+    transition: color 0.3s ease;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--accent-color);
+      }
+    }
+  }
+}
+
 //====================================================================================================

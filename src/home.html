@@ -1,448 +1,408 @@
 <!doctype html>
 <html lang="en">
-  @@include('html/_head.htm',{ "title":"HomePage" })
-  <body>
-    <div class="wrapper">
-      @@include('html/_header.htm',{})
-      <main class="page">
-        <section class="hero">
-          <div class="hero__overlay">
-            <video
-              class="hero__bg"
-              muted
-              autoplay
-              loop
-              src="files/bg.mp4"
-            ></video>
-            <img
-              src="@img/decor/chain.png"
-              alt="decoration element"
-              class="chain-style"
-            />
-            <img
-              src="@img/decor/chain.png"
-              alt="decoration element"
-              class="chain-style right-to-left-move"
-            />
-          </div>
-          <div class="hero__container">
-            <div class="hero__wrapper">
-              <h1 class="hero__title">
-                Spiele: Welten, in denen Fantasien lebendig werden
-              </h1>
-              <div class="hero__descr">
-                <p>
-                  Videospiele sind mehr als nur Zeitvertreib – sie sind
-                  Abenteuer, Geschichten und Herausforderungen. Sie eröffnen uns
-                  Möglichkeiten, die Realität hinter uns zu lassen und in
-                  fantastische Universen einzutauchen.
-                </p>
-                <p>
-                  Egal ob Strategie, Action oder Rollenspiel – Spiele verbinden
-                  Kreativität und Technologie, um uns einzigartige Erlebnisse zu
-                  schenken. Entdecke mit uns die Highlights der Gaming-Welt!
-                </p>
-              </div>
-              <div class="hero__actions">
-                <div class="space-btn">
-                  <a href="#" class="button">Eingabe</a>
-                  <div class="space">
-                    <span style="--i: 31" class="star"></span>
-                    <span style="--i: 12" class="star"></span>
-                    <span style="--i: 57" class="star"></span>
-                    <span style="--i: 93" class="star"></span>
-                    <span style="--i: 23" class="star"></span>
-                    <span style="--i: 70" class="star"></span>
-                    <span style="--i: 6" class="star"></span>
-                  </div>
-                </div>
-              </div>
+@@include('html/_head.htm',{ "title":"HomePage" })
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+      <section class="hero">
+        <div class="hero__overlay">
+          <video class="hero__bg" playsinline muted autoplay loop src="files/bg.mp4"></video>
+          <img src="@img/decor/chain.png" alt="decoration element" class="chain-style" />
+          <img src="@img/decor/chain.png" alt="decoration element" class="chain-style right-to-left-move" />
+        </div>
+        <div class="hero__container">
+          <div class="hero__wrapper">
+            <h1 class="hero__title">
+              Spiele: Welten, in denen Fantasien lebendig werden
+            </h1>
+            <div class="hero__descr">
+              <p>
+                Videospiele sind mehr als nur Zeitvertreib – sie sind
+                Abenteuer, Geschichten und Herausforderungen. Sie eröffnen uns
+                Möglichkeiten, die Realität hinter uns zu lassen und in
+                fantastische Universen einzutauchen.
+              </p>
+              <p>
+                Egal ob Strategie, Action oder Rollenspiel – Spiele verbinden
+                Kreativität und Technologie, um uns einzigartige Erlebnisse zu
+                schenken. Entdecke mit uns die Highlights der Gaming-Welt!
+              </p>
             </div>
-          </div>
-        </section>
-        <section class="featured">
-          <div class="featured__container">
-            <div class="featured__label label">
-              <h2 class="featured__title label__title">Neueste Blogbeiträge</h2>
-              <a href="#" class="label__btn btn btn_primary"
-                >Alle sehen
-                <span
-                  ><svg
-                    class="svg-inline--fa fa-arrow-right fa-w-14"
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fa"
-                    data-icon="arrow-right"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    data-fa-i2svg=""
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
-                    ></path>
-                  </svg>
-                </span>
+            <div class="hero__actions">
+              <a href="#contact-form" class="btn-stars">
+                <strong>Verbinden Sie uns</strong>
+                <div id="container-stars">
+                  <div id="stars"></div>
+                </div>
+
+                <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
               </a>
+
             </div>
-            <div class="featured__items row">
-              <!-- item -->
-              <div class="featured__item item-featured col-xl-3 col-md-6">
-                <div class="item-featured__inner">
-                  <div class="item-featured__head">
-                    <h4>Rockstar Games</h4>
-                    <img src="@img/brands/rc.svg" alt="Image" />
-                  </div>
-                  <div class="item-featured__thumb">
-                    <img src="@img/games/gta.jpg" alt="Image" />
-                  </div>
-                  <div class="item-featured__details">
-                    <a href="#" class="item-featured__name"
-                      >GRAND THEFT AUTO V</a
-                    >
-                    <a href="" class="item-featured__btn btn btn_base btn_small"
-                      >Mehr lesen
-                      <svg
-                        class="svg-inline--fa fa-arrow-right fa-w-14"
-                        aria-hidden="true"
-                        focusable="false"
-                        data-prefix="fa"
-                        data-icon="arrow-right"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512"
-                        data-fa-i2svg=""
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
-                        ></path>
-                      </svg>
-                    </a>
-                  </div>
+          </div>
+        </div>
+      </section>
+      <section class="featured">
+        <div class="featured__container">
+          <div class="featured__label label">
+            <h2 class="featured__title label__title">Neueste Blogbeiträge</h2>
+            <a href="#" class="label__btn btn btn_primary">Alle sehen
+              <span><svg class="svg-inline--fa fa-arrow-right fa-w-14" aria-hidden="true" focusable="false"
+                  data-prefix="fa" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512" data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                  </path>
+                </svg>
+              </span>
+            </a>
+          </div>
+          <div class="featured__items row">
+            <!-- item -->
+            <div class="featured__item item-featured col-xl-3 col-md-6">
+              <div class="item-featured__inner">
+                <div class="item-featured__head">
+                  <h4>Rockstar Games</h4>
+                  <img src="@img/brands/rc.svg" alt="Image" />
+                </div>
+                <div class="item-featured__thumb">
+                  <img src="@img/games/gta.jpg" alt="Image" />
+                </div>
+                <div class="item-featured__details">
+                  <a href="#" class="item-featured__name">GRAND THEFT AUTO V</a>
+                  <a href="" class="item-featured__btn btn btn_base btn_small">Mehr lesen
+                    <svg class="svg-inline--fa fa-arrow-right fa-w-14" aria-hidden="true" focusable="false"
+                      data-prefix="fa" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                      </path>
+                    </svg>
+                  </a>
                 </div>
               </div>
-              <!-- item -->
-              <div class="featured__item item-featured col-xl-3 col-md-6">
-                <div class="item-featured__inner">
-                  <div class="item-featured__head">
-                    <h4>Nintendo</h4>
-                    <img src="@img/brands/nintendo.svg" alt="Image" />
-                  </div>
-                  <div class="item-featured__thumb">
-                    <img src="@img/games/zelda.jpg" alt="Image" />
-                  </div>
-                  <div class="item-featured__details">
-                    <a href="#" class="item-featured__name"
-                      >The Legend of Zelda</a
-                    >
-                    <a href="" class="item-featured__btn btn btn_base btn_small"
-                      >Mehr lesen
-                      <svg
-                        class="svg-inline--fa fa-arrow-right fa-w-14"
-                        aria-hidden="true"
-                        focusable="false"
-                        data-prefix="fa"
-                        data-icon="arrow-right"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512"
-                        data-fa-i2svg=""
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
-                        ></path>
-                      </svg>
-                    </a>
-                  </div>
+            </div>
+            <!-- item -->
+            <div class="featured__item item-featured col-xl-3 col-md-6">
+              <div class="item-featured__inner">
+                <div class="item-featured__head">
+                  <h4>Nintendo</h4>
+                  <img src="@img/brands/nintendo.svg" alt="Image" />
+                </div>
+                <div class="item-featured__thumb">
+                  <img src="@img/games/zelda.jpg" alt="Image" />
+                </div>
+                <div class="item-featured__details">
+                  <a href="#" class="item-featured__name">The Legend of Zelda</a>
+                  <a href="" class="item-featured__btn btn btn_base btn_small">Mehr lesen
+                    <svg class="svg-inline--fa fa-arrow-right fa-w-14" aria-hidden="true" focusable="false"
+                      data-prefix="fa" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                      </path>
+                    </svg>
+                  </a>
                 </div>
               </div>
-              <!-- item -->
-              <div class="featured__item item-featured col-xl-3 col-md-6">
-                <div class="item-featured__inner">
-                  <div class="item-featured__head">
-                    <h4>Activision</h4>
-                    <img src="@img/brands/activision.svg" alt="Image" />
-                  </div>
-                  <div class="item-featured__thumb">
-                    <img src="@img/games/cod.jpg" alt="Image" />
-                  </div>
-                  <div class="item-featured__details">
-                    <a href="#" class="item-featured__name">Call of Duty</a>
-                    <a href="" class="item-featured__btn btn btn_base btn_small"
-                      >Mehr lesen
-                      <svg
-                        class="svg-inline--fa fa-arrow-right fa-w-14"
-                        aria-hidden="true"
-                        focusable="false"
-                        data-prefix="fa"
-                        data-icon="arrow-right"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512"
-                        data-fa-i2svg=""
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
-                        ></path>
-                      </svg>
-                    </a>
-                  </div>
+            </div>
+            <!-- item -->
+            <div class="featured__item item-featured col-xl-3 col-md-6">
+              <div class="item-featured__inner">
+                <div class="item-featured__head">
+                  <h4>Activision</h4>
+                  <img src="@img/brands/activision.svg" alt="Image" />
+                </div>
+                <div class="item-featured__thumb">
+                  <img src="@img/games/cod.jpg" alt="Image" />
+                </div>
+                <div class="item-featured__details">
+                  <a href="#" class="item-featured__name">Call of Duty</a>
+                  <a href="" class="item-featured__btn btn btn_base btn_small">Mehr lesen
+                    <svg class="svg-inline--fa fa-arrow-right fa-w-14" aria-hidden="true" focusable="false"
+                      data-prefix="fa" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                      </path>
+                    </svg>
+                  </a>
                 </div>
               </div>
-              <!-- item -->
-              <div class="featured__item item-featured col-xl-3 col-md-6">
-                <div class="item-featured__inner">
-                  <div class="item-featured__head">
-                    <h4>Electronic Arts</h4>
-                    <img src="@img/brands/ea.svg" alt="Image" />
-                  </div>
-                  <div class="item-featured__thumb">
-                    <img src="@img/games/bf.jpg" alt="Image" />
-                  </div>
-                  <div class="item-featured__details">
-                    <a href="#" class="item-featured__name"
-                      >GRAND THEFT AUTO V</a
-                    >
-                    <a href="" class="item-featured__btn btn btn_base btn_small"
-                      >Mehr lesen
-                      <svg
-                        class="svg-inline--fa fa-arrow-right fa-w-14"
-                        aria-hidden="true"
-                        focusable="false"
-                        data-prefix="fa"
-                        data-icon="arrow-right"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512"
-                        data-fa-i2svg=""
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
-                        ></path>
-                      </svg>
-                    </a>
+            </div>
+            <!-- item -->
+            <div class="featured__item item-featured col-xl-3 col-md-6">
+              <div class="item-featured__inner">
+                <div class="item-featured__head">
+                  <h4>Electronic Arts</h4>
+                  <img src="@img/brands/ea.svg" alt="Image" />
+                </div>
+                <div class="item-featured__thumb">
+                  <img src="@img/games/bf.jpg" alt="Image" />
+                </div>
+                <div class="item-featured__details">
+                  <a href="#" class="item-featured__name">GRAND THEFT AUTO V</a>
+                  <a href="" class="item-featured__btn btn btn_base btn_small">Mehr lesen
+                    <svg class="svg-inline--fa fa-arrow-right fa-w-14" aria-hidden="true" focusable="false"
+                      data-prefix="fa" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__container">
+          <div class="about__label label">
+            <h2 class="about__title label__title">
+              Entdecke die Welt der Spiele
+            </h2>
+          </div>
+          <div class="about__content">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="about__image">
+                  <img src="@img/about.jpg" alt="Gamers" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="about__info">
+                  <h3 class="about__subtitle">Über uns</h3>
+                  <div class="about__text">
+                    <p>
+                      Willkommen bei unserem Gaming-Blog! Wir sind eine Gruppe
+                      leidenschaftlicher Gamer, die ihre Begeisterung für
+                      Videospiele teilen möchten. Unsere Geschichte begann in
+                      zahllosen Gaming-Sessions, die uns inspirierten, diese
+                      Plattform zu schaffen.
+                    </p>
+                    <p>
+                      Von Retro-Klassikern bis zu den neuesten Releases - wir
+                      leben und atmen Gaming. Unser Ziel ist es, unsere
+                      Erfahrungen, Entdeckungen und Begeisterung mit der
+                      Gaming-Community zu teilen und andere Spielebegeisterte
+                      zu inspirieren.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section class="about">
-          <div class="about__container">
-            <div class="about__label label">
-              <h2 class="about__title label__title">
-                Entdecke die Welt der Spiele
-              </h2>
-            </div>
-            <div class="about__content">
-              <div class="row align-items-center">
-                <div class="col-lg-6">
-                  <div class="about__image">
-                    <img src="@img/about.jpg" alt="Gamers" />
-                  </div>
+          <div class="about__items row">
+            <div class="about__item item-about col-lg-3 col-md-6">
+              <div class="item-about__inner">
+                <div class="item-about__icon">
+                  <i class="fas fa-brain"></i>
                 </div>
-                <div class="col-lg-6">
-                  <div class="about__info">
-                    <h3 class="about__subtitle">Über uns</h3>
-                    <div class="about__text">
-                      <p>
-                        Willkommen bei unserem Gaming-Blog! Wir sind eine Gruppe
-                        leidenschaftlicher Gamer, die ihre Begeisterung für
-                        Videospiele teilen möchten. Unsere Geschichte begann in
-                        zahllosen Gaming-Sessions, die uns inspirierten, diese
-                        Plattform zu schaffen.
-                      </p>
-                      <p>
-                        Von Retro-Klassikern bis zu den neuesten Releases - wir
-                        leben und atmen Gaming. Unser Ziel ist es, unsere
-                        Erfahrungen, Entdeckungen und Begeisterung mit der
-                        Gaming-Community zu teilen und andere Spielebegeisterte
-                        zu inspirieren.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                <h3 class="item-about__title">Strategisches Denken</h3>
+                <p class="item-about__text">
+                  Entwickle deine strategischen Fähigkeiten durch komplexe
+                  Spielmechaniken und fordernde Missionen
+                </p>
               </div>
             </div>
-            <div class="about__items row">
-              <div class="about__item item-about col-lg-3 col-md-6">
-                <div class="item-about__inner">
-                  <div class="item-about__icon">
-                    <i class="fas fa-brain"></i>
-                  </div>
-                  <h3 class="item-about__title">Strategisches Denken</h3>
-                  <p class="item-about__text">
-                    Entwickle deine strategischen Fähigkeiten durch komplexe
-                    Spielmechaniken und fordernde Missionen
-                  </p>
+            <div class="about__item item-about col-lg-3 col-md-6">
+              <div class="item-about__inner">
+                <div class="item-about__icon">
+                  <i class="fas fa-users"></i>
                 </div>
+                <h3 class="item-about__title">Soziale Verbindung</h3>
+                <p class="item-about__text">
+                  Verbinde dich mit Spielern weltweit und erlebe spannende
+                  Multiplayer-Abenteuer gemeinsam
+                </p>
               </div>
-              <div class="about__item item-about col-lg-3 col-md-6">
-                <div class="item-about__inner">
-                  <div class="item-about__icon">
-                    <i class="fas fa-users"></i>
-                  </div>
-                  <h3 class="item-about__title">Soziale Verbindung</h3>
-                  <p class="item-about__text">
-                    Verbinde dich mit Spielern weltweit und erlebe spannende
-                    Multiplayer-Abenteuer gemeinsam
-                  </p>
+            </div>
+            <div class="about__item item-about col-lg-3 col-md-6">
+              <div class="item-about__inner">
+                <div class="item-about__icon">
+                  <i class="fas fa-book-reader"></i>
                 </div>
+                <h3 class="item-about__title">Fesselnde Geschichten</h3>
+                <p class="item-about__text">
+                  Tauche ein in epische Erzählungen und werde Teil von
+                  unvergesslichen Gaming-Abenteuern
+                </p>
               </div>
-              <div class="about__item item-about col-lg-3 col-md-6">
-                <div class="item-about__inner">
-                  <div class="item-about__icon">
-                    <i class="fas fa-book-reader"></i>
-                  </div>
-                  <h3 class="item-about__title">Fesselnde Geschichten</h3>
-                  <p class="item-about__text">
-                    Tauche ein in epische Erzählungen und werde Teil von
-                    unvergesslichen Gaming-Abenteuern
-                  </p>
+            </div>
+            <div class="about__item item-about col-lg-3 col-md-6">
+              <div class="item-about__inner">
+                <div class="item-about__icon">
+                  <i class="fas fa-trophy"></i>
                 </div>
-              </div>
-              <div class="about__item item-about col-lg-3 col-md-6">
-                <div class="item-about__inner">
-                  <div class="item-about__icon">
-                    <i class="fas fa-trophy"></i>
-                  </div>
-                  <h3 class="item-about__title">Persönliche Erfolge</h3>
-                  <p class="item-about__text">
-                    Stelle dich Herausforderungen, erreiche neue Levels und
-                    feiere deine Gaming-Erfolge
-                  </p>
-                </div>
+                <h3 class="item-about__title">Persönliche Erfolge</h3>
+                <p class="item-about__text">
+                  Stelle dich Herausforderungen, erreiche neue Levels und
+                  feiere deine Gaming-Erfolge
+                </p>
               </div>
             </div>
           </div>
-        </section>
-        <section class="testimonials">
-          <div class="testimonials__container">
-            <div class="testimonials__label label">
-              <h2 class="testimonials__title label__title">
-                Was unsere Gamer sagen
-              </h2>
-              <div class="label__btn">
-                <div class="testimonials__buttons">
-                  <button type="button" class="testimonials__button-prev">
-                    <i class="fas fa-chevron-left"></i>
-                  </button>
-                  <button type="button" class="testimonials__button-next">
-                    <i class="fas fa-chevron-right"></i>
-                  </button>
-                </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="testimonials__container">
+          <div class="testimonials__label label">
+            <h2 class="testimonials__title label__title">
+              Was unsere Gamer sagen
+            </h2>
+            <div class="label__btn">
+              <div class="testimonials__buttons">
+                <button type="button" class="testimonials__button-prev">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button type="button" class="testimonials__button-next">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
               </div>
-            </div>
-            <div class="testimonials__slider swiper">
-              <div class="testimonials__wrapper swiper-wrapper">
-                <div class="testimonials__slide swiper-slide">
-                  <div class="testimonials__card">
-                    <div class="testimonials__avatar">
-                      <div class="testimonials__initials" data-name="Max Weber"></div>
-                    </div>
-                    <div class="testimonials__content">
-                      <div class="testimonials__text">
-                        "Die Gaming-Community hier ist einfach fantastisch! Die
-                        Spieleempfehlungen haben mir geholfen, einige meiner
-                        neuen Lieblingsspiele zu entdecken. Die Bewertungen sind
-                        ehrlich und detailliert."
-                      </div>
-                      <div class="testimonials__info">
-                        <div class="testimonials__name">Max Weber</div>
-                        <div class="testimonials__role">RPG Enthusiast</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="testimonials__slide swiper-slide">
-                  <div class="testimonials__card">
-                    <div class="testimonials__avatar">
-                      <div class="testimonials__initials" data-name="Laura Schmidt"></div>
-                    </div>
-                    <div class="testimonials__content">
-                      <div class="testimonials__text">
-                        "Als langjährige Gamerin schätze ich besonders die
-                        tiefgehenden Analysen und Strategietipps. Die Community
-                        ist sehr hilfsbereit und die Diskussionen sind immer
-                        interessant."
-                      </div>
-                      <div class="testimonials__info">
-                        <div class="testimonials__name">Laura Schmidt</div>
-                        <div class="testimonials__role">Strategy Gamer</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="testimonials__slide swiper-slide">
-                  <div class="testimonials__card">
-                    <div class="testimonials__avatar">
-                      <div class="testimonials__initials" data-name="Thomas Müller"></div>
-                    </div>
-                    <div class="testimonials__content">
-                      <div class="testimonials__text">
-                        "Eine tolle Plattform für jeden Gamer! Die Guides haben
-                        mir sehr geholfen, meine Skills zu verbessern. Die News
-                        sind immer aktuell und relevant."
-                      </div>
-                      <div class="testimonials__info">
-                        <div class="testimonials__name">Thomas Müller</div>
-                        <div class="testimonials__role">FPS Player</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="testimonials__slide swiper-slide">
-                  <div class="testimonials__card">
-                    <div class="testimonials__avatar">
-                      <div class="testimonials__initials" data-name="Anna Wagner"></div>
-                    </div>
-                    <div class="testimonials__content">
-                      <div class="testimonials__text">
-                        "Endlich eine Seite, die Gaming ernst nimmt! Die Artikel
-                        sind professionell geschrieben und die Community-Events
-                        machen richtig Spaß. Weiter so!"
-                      </div>
-                      <div class="testimonials__info">
-                        <div class="testimonials__name">Anna Wagner</div>
-                        <div class="testimonials__role">MMO Spielerin</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="testimonials__slide swiper-slide">
-                  <div class="testimonials__card">
-                    <div class="testimonials__avatar">
-                      <div class="testimonials__initials" data-name="Felix Bauer"></div>
-                    </div>
-                    <div class="testimonials__content">
-                      <div class="testimonials__text">
-                        "Die Vielfalt an Spielegenres und Themen ist
-                        beeindruckend. Hier findet jeder Gamer etwas
-                        Interessantes. Die Community ist sehr inklusiv und
-                        freundlich."
-                      </div>
-                      <div class="testimonials__info">
-                        <div class="testimonials__name">Felix Bauer</div>
-                        <div class="testimonials__role">
-                          Indie Game Developer
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="testimonials__pagination swiper-pagination"></div>
             </div>
           </div>
-        </section>
-      </main>
-      @@include('html/_footer.htm',{})
-    </div>
-    @@include('html/_js.htm',{})
-  </body>
+          <div class="testimonials__slider swiper">
+            <div class="testimonials__wrapper swiper-wrapper">
+              <div class="testimonials__slide swiper-slide">
+                <div class="testimonials__card">
+                  <div class="testimonials__avatar">
+                    <div class="testimonials__initials" data-name="Max Weber"></div>
+                  </div>
+                  <div class="testimonials__content">
+                    <div class="testimonials__text">
+                      "Die Gaming-Community hier ist einfach fantastisch! Die
+                      Spieleempfehlungen haben mir geholfen, einige meiner
+                      neuen Lieblingsspiele zu entdecken. Die Bewertungen sind
+                      ehrlich und detailliert."
+                    </div>
+                    <div class="testimonials__info">
+                      <div class="testimonials__name">Max Weber</div>
+                      <div class="testimonials__role">RPG Enthusiast</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials__slide swiper-slide">
+                <div class="testimonials__card">
+                  <div class="testimonials__avatar">
+                    <div class="testimonials__initials" data-name="Laura Schmidt"></div>
+                  </div>
+                  <div class="testimonials__content">
+                    <div class="testimonials__text">
+                      "Als langjährige Gamerin schätze ich besonders die
+                      tiefgehenden Analysen und Strategietipps. Die Community
+                      ist sehr hilfsbereit und die Diskussionen sind immer
+                      interessant."
+                    </div>
+                    <div class="testimonials__info">
+                      <div class="testimonials__name">Laura Schmidt</div>
+                      <div class="testimonials__role">Strategy Gamer</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials__slide swiper-slide">
+                <div class="testimonials__card">
+                  <div class="testimonials__avatar">
+                    <div class="testimonials__initials" data-name="Thomas Müller"></div>
+                  </div>
+                  <div class="testimonials__content">
+                    <div class="testimonials__text">
+                      "Eine tolle Plattform für jeden Gamer! Die Guides haben
+                      mir sehr geholfen, meine Skills zu verbessern. Die News
+                      sind immer aktuell und relevant."
+                    </div>
+                    <div class="testimonials__info">
+                      <div class="testimonials__name">Thomas Müller</div>
+                      <div class="testimonials__role">FPS Player</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials__slide swiper-slide">
+                <div class="testimonials__card">
+                  <div class="testimonials__avatar">
+                    <div class="testimonials__initials" data-name="Anna Wagner"></div>
+                  </div>
+                  <div class="testimonials__content">
+                    <div class="testimonials__text">
+                      "Endlich eine Seite, die Gaming ernst nimmt! Die Artikel
+                      sind professionell geschrieben und die Community-Events
+                      machen richtig Spaß. Weiter so!"
+                    </div>
+                    <div class="testimonials__info">
+                      <div class="testimonials__name">Anna Wagner</div>
+                      <div class="testimonials__role">MMO Spielerin</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials__slide swiper-slide">
+                <div class="testimonials__card">
+                  <div class="testimonials__avatar">
+                    <div class="testimonials__initials" data-name="Felix Bauer"></div>
+                  </div>
+                  <div class="testimonials__content">
+                    <div class="testimonials__text">
+                      "Die Vielfalt an Spielegenres und Themen ist
+                      beeindruckend. Hier findet jeder Gamer etwas
+                      Interessantes. Die Community ist sehr inklusiv und
+                      freundlich."
+                    </div>
+                    <div class="testimonials__info">
+                      <div class="testimonials__name">Felix Bauer</div>
+                      <div class="testimonials__role">
+                        Indie Game Developer
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonials__pagination swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="contact__container">
+          <div class="contact__label label">
+            <h2 class="contact__title label__title">
+              Kontaktieren Sie uns
+            </h2>
+          </div>
+          <form id="contact-form" class="contact__form form">
+            <div class="form__item">
+              <input type="text" name="name" class="form__input" placeholder="Name" required>
+            </div>
+            <div class="form__item">
+              <input type="email" name="email" class="form__input" placeholder="E-Mail" required>
+            </div>
+            <div class="form__item">
+              <textarea name="message" class="form__textarea" placeholder="Ihre Nachricht" required></textarea>
+            </div>
+            <button type="submit" class="form__button btn btn_base btn_small">Senden
+              <svg class="svg-inline--fa fa-arrow-right fa-w-14" aria-hidden="true" focusable="false" data-prefix="fa"
+                data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                data-fa-i2svg="">
+                <path fill="currentColor"
+                  d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                </path>
+              </svg>
+              </a>
+          </form>
+        </div>
+      </section>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
 </html>

@@ -49,6 +49,8 @@
   }
 
   &__title {
+    font-family: "Press Start 2P", "Roboto", sans-serif;
+    font-style: normal;
     color: #fff;
     text-transform: uppercase;
     margin-bottom: toRem(20);
@@ -64,6 +66,14 @@
         margin-bottom: toRem(10);
       }
     }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: toRem(20);
   }
 }
 //====================================================================================================
@@ -285,6 +295,7 @@
     border-radius: 20px;
     padding: toRem(30);
     height: 100%;
+    cursor: grab;
   }
 
   &__avatar {
@@ -389,3 +400,60 @@
   }
 }
 //========================================================================================================================================================
+
+.contact {
+  &__container {
+  }
+
+  &__label {
+    margin-bottom: toRem(40);
+  }
+
+  &__form {
+    max-width: toRem(600);
+    margin: 0 auto;
+  }
+}
+
+.form {
+  &__item {
+    margin-bottom: toRem(20);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: toRem(8);
+    padding: toRem(12) toRem(20);
+    color: #fff;
+    font-size: toRem(16);
+    transition: border-color 0.3s ease;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    &:focus {
+      border-color: rgba(255, 255, 255, 0.3);
+      outline: none;
+    }
+  }
+
+  &__textarea {
+    height: toRem(150);
+    resize: vertical;
+    min-height: toRem(100);
+    max-height: toRem(300);
+  }
+
+  &__button {
+    width: 100%;
+    margin-top: toRem(30);
+  }
+}

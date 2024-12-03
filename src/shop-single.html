@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+@@include('html/_head.htm',{
+"title":"GTA V: Premium Edition - Gaming Shop"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <div class="content">
+                <div class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="index.html" class="breadcrumbs__link">Startseite</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="shop-grid.html" class="breadcrumbs__link">Shop</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__current">GTA V: Premium Edition</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <section class="product-single">
+                    <div class="product-single__container">
+                        <div class="product-single__content">
+                            <!-- Галерея продукта -->
+                            <div class="product-single__gallery">
+                                <div class="product-single__main-image">
+                                    <img src="@img/games/gta.jpg" alt="GTA V">
+                                </div>
+                                <div class="product-single__thumbnails">
+                                    <div class="thumbnail active">
+                                        <img src="@img/games/gta.jpg" alt="GTA V">
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="@img/games/gta-2.jpg" alt="GTA V Screenshot 1">
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="@img/games/gta-3.jpg" alt="GTA V Screenshot 2">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Информация о продукте -->
+                            <div class="product-single__info">
+                                <div class="product-single__header">
+                                    <div class="product-single__brand">
+                                        <img src="@img/brands/rc.svg" alt="Rockstar Games">
+                                        <h4>Rockstar Games</h4>
+                                    </div>
+                                    <h1 class="product-single__title">Grand Theft Auto V: Premium Edition</h1>
+                                </div>
+
+                                <div class="product-single__price">
+                                    <del>€59.99</del>
+                                    <ins>€29.99</ins>
+                                    <span class="product-single__discount">-50%</span>
+                                </div>
+
+                                <div class="product-single__description">
+                                    <p>Grand Theft Auto V für PC bietet Spielern die Möglichkeit, die Stadt Los Santos
+                                        und das Umland von Blaine County in Auflösungen von bis zu 4K und darüber hinaus
+                                        zu erkunden, sowie die Chance, das Spiel mit 60 Bildern pro Sekunde zu erleben.
+                                    </p>
+                                </div>
+
+                                <div class="product-single__meta">
+                                    <div class="meta-item">
+                                        <span class="item-label">Plattform:</span>
+                                        <span class="item-value">PC, PS5, Xbox Series X</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="item-label">Genre:</span>
+                                        <span class="item-value">Action, Adventure</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="item-label">Release:</span>
+                                        <span class="item-value">14.04.2015</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-single__actions">
+                                    <div class="quantity">
+                                        <button type="button" class="minus">-</button>
+                                        <input type="number" class="qty" item-value="1" min="1" value="1">
+                                        <button type="button" class="plus">+</button>
+                                    </div>
+                                    <button type="button" class="add-to-cart">In den Warenkorb</button>
+                                    <button type="button" class="wishlist">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Табы с дополнительной информацией -->
+                        <div class="product-single__tabs">
+                            <div class="tabs">
+                                <div class="tabs__nav">
+                                    <button class="tab-btn active" data-tab="description">Beschreibung</button>
+                                    <button class="tab-btn" data-tab="additional">Zusätzliche Information</button>
+                                    <button class="tab-btn" data-tab="reviews">Bewertungen (2)</button>
+                                </div>
+                                <div class="tabs__content">
+                                    <div class="tab-panel active" id="description">
+                                        <h3>Beschreibung</h3>
+                                        <p>Als junger Gauner auf den Straßen von Los Santos versucht Franklin Clinton,
+                                            den großen Durchbruch zu schaffen. Michael, ein ehemaliger Bankräuber,
+                                            entdeckt, dass im "ruhigen Leben" nicht alles rosig ist, und Trevor
+                                            Phillips, ein Maniac, pendelt zwischen dem nächsten großen Ding und dem
+                                            nächsten Rausch.</p>
+                                        <p>Grand Theft Auto V für PC bietet auch den brandneuen First-Person-Modus, der
+                                            Spielern die Möglichkeit gibt, die unglaublich detaillierte Welt von Los
+                                            Santos und Blaine County auf eine völlig neue Art zu erkunden.</p>
+                                    </div>
+
+                                    <div class="tab-panel" id="additional">
+                                        <h3>Zusätzliche Information</h3>
+                                        <table class="shop_attributes">
+                                            <tr>
+                                                <th>Entwickler</th>
+                                                <td>Rockstar North</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Publisher</th>
+                                                <td>Rockstar Games</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Sprachen</th>
+                                                <td>Deutsch, Englisch, Französisch, Italienisch, Spanisch</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div class="tab-panel" id="reviews">
+                                        <h3>Bewertungen</h3>
+                                        <div class="reviews-list">
+                                            <!-- Здесь будут отзывы -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

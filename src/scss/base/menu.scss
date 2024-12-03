@@ -12,25 +12,25 @@
       top: 0;
       left: -100%;
       transition: left 0.3s ease 0s;
-      padding: toRem(70) toRem(10) toRem(30) toRem(10);
+      padding: toRem(40) toRem(10) toRem(30) toRem(10);
       z-index: 9;
       background-image: linear-gradient(
           to bottom,
           transparent,
           transparent 16.6667%,
-          #fff 16.6667%
+          #1a1a1a 16.6667%
         ),
-        linear-gradient(to right, #ccc, #ccc 16.6667%, #fff 16.6667%);
-      background-size: 6px 6px;
+        linear-gradient(to right, #333, #333 16.6667%, #1a1a1a 16.6667%);
+      background-size: 10px 10px;
 
       &::before {
         content: "";
         position: fixed;
         width: 100%;
-        height: toEm(45);
+        height: toEm(40);
         top: 0;
         left: -100%;
-        background-color: #fff;
+        background-color: transparent;
         transition: left 0.3s ease 0s;
         z-index: 9;
       }
@@ -67,7 +67,7 @@
 
   // .menu__link
   &__link {
-	color: #fff;
+    color: #fff;
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
@@ -94,7 +94,7 @@
       height: toEm(4);
       opacity: 0;
       border-radius: toRem(10);
-      background-color: #333;
+      background-color: #ddf247;
       transform: translateX(100px);
       transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
     }

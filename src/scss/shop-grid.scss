@@ -1,0 +1,344 @@
+.shop {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(30);
+    padding: toRem(20);
+    @media (max-width: $mobile) {
+      padding: toRem(15);
+      gap: toRem(20);
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: toRem(20);
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__title {
+    font-size: toRem(32);
+    color: #fff;
+    @media (max-width: $mobile) {
+      font-size: toRem(24);
+    }
+  }
+
+  &__filters {
+    select {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #fff;
+      padding: toRem(10) toRem(15);
+      border-radius: toRem(5);
+      cursor: pointer;
+      option {
+        background: #1a1a1a;
+      }
+    }
+  }
+
+  &__content {
+    display: grid;
+    gap: toRem(30);
+    grid-template-columns: toRem(280) 1fr;
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+      gap: toRem(20);
+    }
+  }
+}
+
+.sidebar {
+  @media (max-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(toRem(250), 1fr));
+    gap: toRem(20);
+    margin-bottom: toRem(20);
+  }
+
+  &__widget {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: toRem(10);
+    padding: toRem(20);
+    @media (max-width: $mobile) {
+      padding: toRem(15);
+    }
+    &:not(:last-child) {
+      @media (min-width: $tablet) {
+        margin-bottom: toRem(20);
+      }
+    }
+  }
+
+  &__title {
+    color: #fff;
+    font-size: toRem(18);
+    margin-bottom: toRem(15);
+  }
+
+  .product-categories {
+    li {
+      &:not(:last-child) {
+        margin-bottom: toRem(10);
+      }
+      a {
+        color: rgba(255, 255, 255, 0.7);
+        transition: color 0.3s;
+        &:hover {
+          color: #ddf247;
+        }
+      }
+    }
+  }
+
+  .price_slider_wrapper {
+    .price_slider {
+      height: toRem(4);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: toRem(2);
+      margin: toRem(15) 0;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 20%;
+        right: 40%;
+        height: 100%;
+        background: #ddf247;
+        border-radius: inherit;
+      }
+    }
+    .price_slider_amount {
+      display: flex;
+      gap: toRem(10);
+      input {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+      }
+      button {
+        background: #ddf247;
+        color: #000;
+        padding: toRem(8) toRem(15);
+        border-radius: toRem(5);
+        font-weight: 500;
+        transition: opacity 0.3s;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+.products {
+  &__list {
+    display: grid;
+    gap: toRem(30);
+    grid-template-columns: repeat(auto-fit, minmax(toRem(250), 1fr));
+    @media (max-width: em(1200)) {
+      gap: toRem(20);
+    }
+    @media (max-width: $mobile) {
+      gap: toRem(15);
+    }
+  }
+
+  &__item {
+    height: 100%;
+  }
+}
+
+.item-product {
+  display: flex;
+  min-height: 100%;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: toRem(10);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    @media (max-width: $mobile) {
+      border-radius: toRem(8);
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: toRem(15) toRem(20);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    @media (max-width: $mobile) {
+      padding: toRem(12) toRem(15);
+    }
+
+    h4 {
+      color: #fff;
+      font-size: toRem(16);
+      font-weight: 500;
+      margin: 0;
+      @media (max-width: $mobile) {
+        font-size: toRem(14);
+      }
+    }
+
+    img {
+      height: toRem(24);
+      width: auto;
+      opacity: 0.7;
+      @media (max-width: $mobile) {
+        height: toRem(20);
+      }
+    }
+  }
+
+  &__thumb {
+    position: relative;
+    padding-bottom: 56.25%;
+    
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: toRem(20);
+    gap: toRem(10);
+    @media (max-width: $mobile) {
+      padding: toRem(15);
+      gap: toRem(8);
+    }
+  }
+
+  &__name {
+    flex: 1 1 auto;
+    color: #fff;
+    font-size: toRem(18);
+    font-weight: 500;
+    line-height: 1.3;
+    transition: color 0.3s;
+    @media (max-width: $mobile) {
+      font-size: toRem(14);
+    }
+
+    &:hover {
+      color: #ddf247;
+    }
+  }
+
+  &__price {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: toRem(10);
+
+    del {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: toRem(14);
+      @media (max-width: $mobile) {
+        font-size: toRem(12);
+      }
+    }
+
+    ins {
+      color: #ddf247;
+      font-size: toRem(18);
+      font-weight: 500;
+      text-decoration: none;
+      @media (max-width: $mobile) {
+        font-size: toRem(16);
+      }
+    }
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: toRem(10);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: toRem(14);
+    transition: color 0.3s;
+
+    i {
+      font-size: toRem(12);
+      transition: transform 0.3s;
+    }
+
+    &:hover {
+      color: #ddf247;
+
+      i {
+        transform: translateX(toRem(5));
+      }
+    }
+  }
+}
+
+.woocommerce-pagination {
+  margin-top: toRem(40);
+  @media (max-width: $mobile) {
+    margin-top: toRem(30);
+  }
+  
+  .page-numbers {
+    display: flex;
+    justify-content: center;
+    gap: toRem(10);
+    
+    li {
+      a, span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: toRem(40);
+        height: toRem(40);
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: toRem(5);
+        color: #fff;
+        transition: all 0.3s;
+        
+        @media (max-width: $mobile) {
+          width: toRem(35);
+          height: toRem(35);
+          font-size: toRem(14);
+        }
+        
+        &:hover {
+          background: rgba(221, 242, 71, 0.1);
+          border-color: #ddf247;
+        }
+        
+        &.current {
+          background: #ddf247;
+          border-color: #ddf247;
+          color: #000;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+@@include('html/_head.htm',{
+"title":"Blog"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <section class="blog">
+                <div class="blog__container">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="index.html" class="breadcrumbs__link">Startseite</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__current">Blog</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="blog__items">
+                        <article class="blog__item item-blog">
+                            <a href="blog-single.html" class="item-blog__image">
+                                <img src="@img/games/gta.jpg" alt="GTA V">
+                            </a>
+                            <div class="item-blog__date">Rockstar Games</div>
+                            <h3 class="item-blog__title">
+                                <a href="blog-single.html">Grand Theft Auto V: Eine epische Reise durch Los Santos</a>
+                            </h3>
+                            <a href="blog-single.html" class="item-featured__btn btn btn_base btn_small">Weiterlesen
+                                <svg class="svg-inline--fa fa-arrow-right fa-w-14" aria-hidden="true" focusable="false"
+                                    data-prefix="fa" data-icon="arrow-right" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                        d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </article>
+                        <article class="blog__item item-blog">
+                            <a href="blog-single.html" class="item-blog__image">
+                                <img src="@img/games/zelda.jpg" alt="Zelda">
+                            </a>
+                            <div class="item-blog__date">Nintendo</div>
+                            <h3 class="item-blog__title">
+                                <a href="blog-single.html">The Legend of Zelda: Tears of the Kingdom - Ein neues
+                                    Abenteuer</a>
+                            </h3>
+                            <a href="blog-single.html" class="item-featured__btn btn btn_base btn_small">Weiterlesen
+                                <svg class="svg-inline--fa fa-arrow-right fa-w-14" aria-hidden="true" focusable="false"
+                                    data-prefix="fa" data-icon="arrow-right" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                        d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </article>
+                        <article class="blog__item item-blog">
+                            <a href="blog-single.html" class="item-blog__image">
+                                <img src="@img/games/cod.jpg" alt="Call of Duty">
+                            </a>
+                            <div class="item-blog__date">Activision</div>
+                            <h3 class="item-blog__title">
+                                <a href="blog-single.html">Call of Duty: Modern Warfare III - Die Schlacht beginnt</a>
+                            </h3>
+                            <a href="blog-single.html" class="item-featured__btn btn btn_base btn_small">Weiterlesen
+                                <svg class="svg-inline--fa fa-arrow-right fa-w-14" aria-hidden="true" focusable="false"
+                                    data-prefix="fa" data-icon="arrow-right" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                        d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </article>
+                        <article class="blog__item item-blog">
+                            <a href="blog-single.html" class="item-blog__image">
+                                <img src="@img/games/bf.jpg" alt="Battlefield">
+                            </a>
+                            <div class="item-blog__date">Electronic Arts</div>
+                            <h3 class="item-blog__title">
+                                <a href="blog-single.html">Battlefield 2042: Die Zukunft des Krieges</a>
+                            </h3>
+                            <a href="blog-single.html" class="item-featured__btn btn btn_base btn_small">Weiterlesen
+                                <svg class="svg-inline--fa fa-arrow-right fa-w-14" aria-hidden="true" focusable="false"
+                                    data-prefix="fa" data-icon="arrow-right" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                        d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

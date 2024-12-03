@@ -2,7 +2,6 @@
   position: absolute;
   width: 100%;
   z-index: 100;
-//   background-color: #fff;
   overflow: hidden;
 
   &._header-scroll {
@@ -52,17 +51,8 @@
 
   // .header__actions
   &__actions {
-    @media (min-width:$mobile){
-         display: none; 
+    @media (min-width: $mobile) {
+      display: none;
     }
   }
 }
-
-.menu {
-    // .menu__body
-    
-  
-    // .menu__icon
-    &__icon {
-    }
-  }

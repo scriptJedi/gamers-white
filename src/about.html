@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+@@include('html/_head.htm',{
+"title":"Über uns - Gaming Shop"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <div class="content">
+                <div class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="index.html" class="breadcrumbs__link">Startseite</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__current">Über uns</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <section class="about-page">
+                    <div class="about-page__container">
+                        <div class="about-page__header">
+                            <h1 class="about-page__title">Von Gamern für Gamer</h1>
+                            <p class="about-page__subtitle">Eine Community von Spieleenthusiasten, die ihre Leidenschaft
+                                teilen</p>
+                        </div>
+
+                        <div class="about-page__content">
+                            <div class="about-page__image">
+                                <img src="@img/about.jpg" alt="Gaming Community">
+                            </div>
+                            <div class="about-page__text">
+                                <h2>Unsere Geschichte</h2>
+                                <p>Wir sind eine Gruppe von leidenschaftlichen Gamern, die 2015 beschlossen haben, ihre
+                                    Liebe zu Videospielen mit anderen zu teilen. Was als kleines Fan-Projekt begann, hat
+                                    sich zu einer lebendigen Community entwickelt, in der Spieler zusammenkommen, um
+                                    ihre Begeisterung für Gaming zu teilen.</p>
+
+                                <h2>Unsere Mission</h2>
+                                <p>Unsere primäre Mission ist es, die Freude am Gaming zu verbreiten und eine einladende
+                                    Community für alle Spielebegeisterten zu schaffen. Dabei bieten wir auch eine
+                                    kuratierte Auswahl an Spielen zu fairen Preisen an, um den Zugang zu großartigen
+                                    Gaming-Erlebnissen zu ermöglichen.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-page__features">
+                            <div class="feature">
+                                <div class="feature__icon">
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+                                <h3>Community First</h3>
+                                <p>Eine lebendige Gaming-Community, die Wissen und Erfahrungen teilt</p>
+                            </div>
+
+                            <div class="feature">
+                                <div class="feature__icon">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <h3>Aus Leidenschaft</h3>
+                                <p>Von echten Gamern kuratierte Spieleauswahl</p>
+                            </div>
+
+                            <div class="feature">
+                                <div class="feature__icon">
+                                    <i class="fa-solid fa-handshake"></i>
+                                </div>
+                                <h3>Faire Preise</h3>
+                                <p>Gaming soll für jeden zugänglich sein</p>
+                            </div>
+                        </div>
+
+                        <div class="about-page__team">
+                            <h2 class="team__title">Unser Team</h2>
+                            <div class="team__grid">
+                                <div class="team__member">
+                                    <div class="member__avatar">
+                                        <div class="member__initials" data-name="Max Mustermann"></div>
+                                    </div>
+                                    <h3>Max Mustermann</h3>
+                                    <p>Community Manager</p>
+                                </div>
+
+                                <div class="team__member">
+                                    <div class="member__avatar">
+                                        <div class="member__initials" data-name="Anna Schmidt"></div>
+                                    </div>
+                                    <h3>Anna Schmidt</h3>
+                                    <p>Content Creator</p>
+                                </div>
+
+                                <div class="team__member">
+                                    <div class="member__avatar">
+                                        <div class="member__initials" data-name="Tom Weber"></div>
+                                    </div>
+                                    <h3>Tom Weber</h3>
+                                    <p>Gaming Expert</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>
