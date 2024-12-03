@@ -7,6 +7,9 @@
   &._header-scroll {
     position: fixed;
     top: -200%;
+    .menu__link {
+      color: #000;
+    }
   }
 
   &._header-show {
@@ -18,7 +21,7 @@
     animation-duration: 2s;
     -webkit-animation-name: none;
     animation-name: none;
-    background-color: #fff;
+    background-color: #f5f5f5;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
 

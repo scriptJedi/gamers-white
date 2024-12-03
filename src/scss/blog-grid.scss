@@ -23,6 +23,7 @@
   flex-direction: column;
 
   &__image {
+    overflow: hidden;
     img {
       width: 100%;
       height: toEm(250);
